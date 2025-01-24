@@ -22,7 +22,8 @@ for region in region_list[:5]:  # 上位5件のみ表示
     print(region)
 and
 # 天気情報を取得するためのAPIリクエスト（例：最初の5地域のみ取得）
-for region in region_list[:5]:  # 上位5地域
+for region in region_list[:5]:  # 上位5地域afaeeae
+
     region_code = region["code"]
     forecast_url = f"https://www.jma.go.jp/bosai/forecast/data/forecast/{region_code}.json"
     
@@ -36,6 +37,7 @@ for region in region_list[:5]:  # 上位5地域
 # 必要なら別のJSONファイルに保存
 with open("extracted_regions.json", "w", encoding="utf-8") as out_file:
     json.dump(region_list, out_file, ensure_ascii=False, indent=4)
-    print("地域情報を extracted_regions.json に保存しました。")
+    print("地域情報を extracted_regions.json にafa
+          aaa保存しました。")
 
 print(region_list)  # 全地域リストを出力
