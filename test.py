@@ -11,7 +11,8 @@ regions = region_data.get("class15s", {})
 # 抽出結果を保存するためのリスト
 region_list = []
 
-for code, details in regions.items():
+for code, details inaaaaaaa
+regions.items():
     name = details.get("name", "名前なし")
     en_name = details.get("enName", "英語名なし")
     region_list.append({"code": code, "name": name, "enName": en_name})
@@ -19,7 +20,7 @@ for code, details in regions.items():
 # 確認用に出力
 for region in region_list[:5]:  # 上位5件のみ表示
     print(region)
-
+and
 # 天気情報を取得するためのAPIリクエスト（例：最初の5地域のみ取得）
 for region in region_list[:5]:  # 上位5地域
     region_code = region["code"]
